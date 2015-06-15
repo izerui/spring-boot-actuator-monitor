@@ -152,6 +152,9 @@
 		logging.file=/tmp/logs/offline-proxy-tcp.log
 		logging.level.*= INFO
 
+		注意： 有些应用被权限框架拦截了。故需要加入 management.context-path=/management 
+		并在权限框架内 将 /management/** = anon 权限放开
+
 
 4.   配置logback的jmx接口调用
 
