@@ -137,6 +137,7 @@
 		> war 方式运行
 		
 		# web application
+		info.version=@pom.version@
 		endpoints.jmx.domain=@pom.artifactId@
 		spring.application.name=@pom.artifactId@
 		
