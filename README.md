@@ -77,8 +77,6 @@
 
 		# application
 		server.port = 8888
-		server.context-path=/boot-admin
-		spring.application.name=boot-admin
 		
 		# basic security
 		security.ignored=/api/**
@@ -127,7 +125,7 @@
 		endpoints.jmx.domain=qq-pay-web
 		
 		# boot admin
-		spring.boot.admin.url=http://192.168.1.128:8888/boot-admin
+		spring.boot.admin.url=http://192.168.1.128:8888
 		spring.boot.admin.client.service-url=http://192.168.1.106:8098/qq-pay-web
 
 
