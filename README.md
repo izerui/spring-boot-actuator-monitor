@@ -124,9 +124,10 @@
 
 		# web application
 		server.port=28584
-		server.context-path=/application-context
-		endpoints.jmx.domain=application-jmx-name
-		spring.application.name=application-name
+		info.version=@pom.version@
+		server.context-path=/@pom.artifactId@
+		endpoints.jmx.domain=@pom.artifactId@
+		spring.application.name=@pom.artifactId@
 
 		# boot admin
 		spring.boot.admin.url=http://192.168.1.128:8888/boot-admin
@@ -136,8 +137,8 @@
 		> war 方式运行
 		
 		# web application
-		endpoints.jmx.domain=application-jmx-name
-		spring.application.name=application-name
+		endpoints.jmx.domain=@pom.artifactId@
+		spring.application.name=@pom.artifactId@
 		
 		# boot admin
 		spring.boot.admin.url=http://192.168.1.128:8888
