@@ -118,16 +118,37 @@
             <optional>false</optional>
         </dependency>
 
-3.   配置被监控的应用的名称和监控后台地址
+3.   配置被监控的应用的名称和监控后台地址 application.properties
+
+		> jar 方式运行
 
 		# web application
-		spring.application.name=qq-pay-web
-		endpoints.jmx.domain=qq-pay-web
+		server.port=28584
+		server.context-path=/application-context
+		endpoints.jmx.domain=application-jmx-name
+		spring.application.name=application-name
+
+		# boot admin
+		spring.boot.admin.url=http://192.168.1.128:8888/boot-admin
+
+		---------------------------------------------------
+
+		> war 方式运行
+		
+		# web application
+		endpoints.jmx.domain=application-jmx-name
+		spring.application.name=application-name
 		
 		# boot admin
 		spring.boot.admin.url=http://192.168.1.128:8888
-		# required in war
 		spring.boot.admin.client.service-url=http://192.168.1.106:8098/qq-pay-web
+
+
+
+		两种方式记得别忘了添加logging配置
+		# LOGGING
+		logging.file=/tmp/logs/offline-proxy-tcp.log
+		logging.level.*= INFO
 
 
 4.   配置logback的jmx接口调用
