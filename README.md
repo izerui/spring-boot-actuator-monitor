@@ -81,6 +81,7 @@
 		spring.application.name=boot-admin
 		
 		# basic security
+		security.ignored=/api/**
 		security.user.name=boot
 		security.user.password=boot1234
 
