@@ -122,11 +122,14 @@
 
 3.   配置被监控的应用的名称和监控后台地址
 
-
-		# monitor
-		spring.boot.admin.url=http://192.168.1.128:8888/boot-admin
+		# web application
+		spring.application.name=qq-pay-web
+		endpoints.jmx.domain=qq-pay-web
 		
-		spring.application.name=offline-proxy-server
+		# boot admin
+		spring.boot.admin.url=http://192.168.1.128:8888/boot-admin
+		spring.boot.admin.client.service-url=http://192.168.1.106:8098/qq-pay-web
+
 
 4.   配置logback的jmx接口调用
 
