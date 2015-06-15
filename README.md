@@ -126,6 +126,7 @@
 		
 		# boot admin
 		spring.boot.admin.url=http://192.168.1.128:8888
+		# required in war
 		spring.boot.admin.client.service-url=http://192.168.1.106:8098/qq-pay-web
 
 
