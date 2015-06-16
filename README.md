@@ -147,13 +147,16 @@
 
 
 
-		两种方式记得别忘了添加logging配置
+		注意： 别忘了添加logging配置
 		# LOGGING
 		logging.file=/tmp/logs/offline-proxy-tcp.log
 		logging.level.*= INFO
 
-		注意： 有些应用被权限框架拦截了。故需要加入 management.context-path=/management 
-		并在权限框架内 将 /management/** = anon 权限放开
+		注意： 有些应用被权限框架拦截了。故需要加入 
+		management.context-path=/management 
+		并在权限框架内 将 /management/** = anon 权限放开，声明url注意上下文。
+				
+				
 
 
 4.   配置logback的jmx接口调用
