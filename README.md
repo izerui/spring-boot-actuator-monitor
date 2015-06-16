@@ -125,6 +125,8 @@
 		# web application
 		server.port=28584
 		info.version=@pom.version@
+		info.info=微信代理服务
+		management.context-path=/management
 		server.context-path=/@pom.artifactId@
 		endpoints.jmx.domain=@pom.artifactId@
 		spring.application.name=@pom.artifactId@
@@ -138,6 +140,8 @@
 		
 		# web application
 		info.version=@pom.version@
+		info.info=阿里支付服务
+		management.context-path=/management
 		endpoints.jmx.domain=@pom.artifactId@
 		spring.application.name=@pom.artifactId@
 		
