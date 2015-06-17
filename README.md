@@ -154,7 +154,6 @@
 		注意： 别忘了添加logging配置
 		# LOGGING
 		logging.file=/tmp/logs/offline-proxy-tcp.log
-		logging.level.*= INFO
 
 		注意： 有些应用被权限框架拦截了。故需要加入 
 		management.context-path=/management 
